@@ -4,7 +4,7 @@ from sys import argv
 
 #P-Decode 
 #Android Pattern ByPass ()
-#Coded by dogo h@ck (MGF15)
+#Coded by MGF15
 #first you need gesture.key file you can find it on /data/system/
 
 def get(x):
