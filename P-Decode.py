@@ -2,7 +2,6 @@ import itertools,sys,time
 from hashlib import sha1
 
 '''
-
 android pattern cracker 
 
 Coded by MGF15
