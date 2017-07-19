@@ -36,7 +36,7 @@ def crack(hash):
 
 				print '[+] pattern -> ' , ''.join(p) 
 				print p_
-				print '[*] Time : ', round(time.time() - now, 2)
+				print '[*] Time : ', round(time.time() - now, 2) , ' seconds '
 if __name__ == "__main__":
 
 	if len(sys.argv) < 3:
