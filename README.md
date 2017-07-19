@@ -19,7 +19,7 @@ this script will take less than 15 seconds ! yup it's fast :wink:
  | 6 | 7 | 8 |
  +---+---+---+
 
-[*] Time :  11.66
+[*] Time :  11.66 seconds
 
 
 ```
