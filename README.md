@@ -23,3 +23,15 @@ this script will take less than 15 seconds ! yup it's fast :wink:
 
 
 ```
+# Time Test 
+
+|  Pattern length     |        Time ±           |
+| ----------------    | ---------------------   |
+|       4 <           |        0.04s            | 
+|       5 <           |        0.19s            |
+|       6 <           |        0.80s            |
+|       7 <           |        2.88s            |
+|       8 <           |        6.77s            |
+|       9 <           |       11.68s            |
+
+> On Intel® Pentium® 4 CPU 3.00Ghz 
