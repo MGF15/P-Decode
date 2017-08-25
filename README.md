@@ -35,3 +35,16 @@ this script will take less than 15 seconds ! yup it's fast :wink:
 |       9 <           |       11.68s            |
 
 > On Intel® Pentium® 4 CPU 3.00Ghz 
+
+# Changelog
+
+v0.1
+```
+first version
+```
+
+v0.2
+```
+* speed up to just 6 sec ! 
+* simple change on the code 
+```
