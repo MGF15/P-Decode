@@ -43,7 +43,8 @@ python p-decode.py -f gesture.key
 |       9 <           |        7.02s            |
 
 > On Intel® Pentium® 4 CPU 3.00Ghz 
-> less than 2 sec on Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz
+
+> less than 2 sec on Intel® Core(TM) i5-6200U CPU @ 2.30GHz
 
 # Changelog
 
