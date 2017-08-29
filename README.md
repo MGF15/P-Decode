@@ -20,17 +20,16 @@ python p-decode.py -f gesture.key
 
 [+] Pattern 	   : 876543210
 
- +---+---+---+
- | 0 | 1 | 2 |
- +---+---+---+
- | 3 | 4 | 5 |
- +---+---+---+
- | 6 | 7 | 8 |
- +---+---+---+
+[+] Pattern SVG    : 876543210.svg
 
-[*] Time : 6.58 sec
+[*] Time : 6.6 sec
+
 
 ```
+# SVG 
+
+![SVG](https://cdn.rawgit.com/MGF15/P-Decode/master/svgtest.svg)
+
 # Time Test 
 
 |  Pattern length     |        Time ±           |
@@ -57,4 +56,8 @@ v0.2
 ```
 * speed up to just 6 sec ! 
 * simple change on the code 
+```
+v0.3
+```
+add svg file 
 ```
