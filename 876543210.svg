@@ -1,0 +1,32 @@
+<svg >
+	<circle cx="45" cy="45" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8"  stroke="green"/>
+	<circle cx="45" cy="125" r="2.5" fill="black" stroke-width="40" stroke-opacity="0.8" stroke="green"/>
+	<circle cx="45" cy="205" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" stroke="green"/>
+	<circle cx="125" cy="45" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" stroke="green"/>
+	<circle cx="125" cy="125" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8"  stroke="green"/>
+	<circle cx="125" cy="205" r="2.5" fill="black" stroke-width="40" stroke-opacity="0.8" stroke="green"/>
+	<circle cx="205" cy="45" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" stroke="green"/>
+	<circle cx="205" cy="125" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" stroke="green"/>
+	<circle cx="205" cy="205" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8"  stroke="green"/>
+	
+	<line x1="205" y1="205" x2="125" y2="205" stroke="white" stroke-width="5" />
+	<line x1="125" y1="205" x2="45" y2="205" stroke="white" stroke-width="5" />
+	<line x1="45" y1="205" x2="205" y2="125" stroke="white" stroke-width="5" />
+	<line x1="205" y1="125" x2="125" y2="125" stroke="white" stroke-width="5" />
+	<line x1="125" y1="125" x2="45" y2="125" stroke="white" stroke-width="5" />
+	<line x1="45" y1="125" x2="205" y2="45" stroke="white" stroke-width="5" />
+	<line x1="205" y1="45" x2="125" y2="45" stroke="white" stroke-width="5" />
+	<line x1="125" y1="45" x2="45" y2="45" stroke="white" stroke-width="5" />
+	<line x1="$" y1="$" x2="$" y2="$" stroke="white" stroke-width="5" />
+	
+	<text x="38" y="52" fill="green" font-size="24">9</text>
+	<text x="118" y="52" fill="green" font-size="24">8</text>
+	<text x="197" y="52" fill="green" font-size="24">7</text>
+	<text x="38" y="133" fill="green" font-size="24">6</text>
+	<text x="118" y="132" fill="green" font-size="24">5</text>
+	<text x="198" y="132" fill="green" font-size="24">4</text>
+	<text x="38" y="212" fill="green" font-size="24">3</text>
+	<text x="118" y="212" fill="green" font-size="24">2</text>
+	<text x="198" y="212" fill="green" font-size="24">1</text>
+	
+</svg>
