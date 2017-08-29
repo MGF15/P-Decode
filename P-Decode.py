@@ -1,4 +1,4 @@
-import itertools,sys,time
+import itertools,sys,time,svg
 from hashlib import sha1
 from binascii import unhexlify , hexlify
 
@@ -14,16 +14,7 @@ file in android ->  /data/system/gesture.key
 
 pattern = "012345678"
 
-patt = '''
- +---+---+---+
- | 0 | 1 | 2 |
- +---+---+---+
- | 3 | 4 | 5 |
- +---+---+---+
- | 6 | 7 | 8 |
- +---+---+---+
-'''
-now=time.time()
+now = time.time()
 
 def crack(hash):
 	print '''
@@ -43,9 +34,14 @@ def crack(hash):
 			sha1_hash = sha1(x).hexdigest()
 			
 			if hash == sha1_hash:
+				pt = ''.join(p)
 				print '[+] Pattern Length : %s\n' % len(p)
-				print '[+] Pattern \t   : %s' % ''.join(p) 
-				print patt
+				print '[+] Pattern \t   : %s\n' % pt
+				patt = svg.draw(pt)
+				sv = open('%s.svg' % pt ,'wb')
+				sv.write(patt)
+				sv.close()
+				print '[+] Pattern SVG    : %s.svg\n' % pt
 				print '[*] Time : %s sec' % round(time.time() - now, 2)  
 				exit()
 	print "[-] Pattern not found !"
