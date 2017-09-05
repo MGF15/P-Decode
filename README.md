@@ -10,7 +10,7 @@ this script will take less than 8 seconds ! yup it's fast :wink:
 python p-decode.py -f gesture.key                             
 
 	|~)  |~\ _ _ _  _| _
-	|~ ~~|_/}_(_(_)(_|}_ v0.2
+	|~ ~~|_/}_(_(_)(_|}_ v0.3
 
 		[ {41}ndr0id Pa77ern Cr4ck t00l. ]
 	
