@@ -4,7 +4,7 @@ from binascii import unhexlify , hexlify
 
 '''
 
-android pattern cracker v0.2
+android pattern cracker v0.3
 
 Coded by MGF15
 
@@ -19,7 +19,7 @@ now = time.time()
 def crack(hash):
 	print '''
 	|~)  |~\ _ _ _  _| _
-	|~ ~~|_/}_(_(_)(_|}_ v0.2\n
+	|~ ~~|_/}_(_(_)(_|}_ v0.3\n
 		[ {41}ndr0id Pa77ern Cr4ck t00l. ]
 	'''
 	print '[*] Pattern Hash   : %s\n' % hash
