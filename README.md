@@ -3,7 +3,7 @@ You need gesture.key you can find it in data/system/
 After that run script and follow options
 
 # Time !
-this script will take less than 8 seconds ! yup it's fast :wink: see ![note](#time-test)
+this script will take less than 8 seconds ! yup it's fast :wink: see [note](https://github.com/MGF15/P-Decode#time-test)
 
 # Test
 ```
