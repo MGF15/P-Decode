@@ -32,7 +32,7 @@ python p-decode.py -f gesture.key
 
 # Time Test 
 
-```Note : now it's take less than 2 sec !! cool huh ?```
+> Note : now it's take less than 2 sec !! cool huh ?
 
 |  Pattern length     |        Time ±           |
 | ----------------    | ---------------------   |
@@ -47,7 +47,7 @@ python p-decode.py -f gesture.key
 
 > less than 2 sec on Intel® Core(TM) i5-6200U CPU @ 2.30GHz
 
-# Using
+# Usage
 ``` python p-decode.py -f gesture.key [ crack pattern by file ] ```
 
 ```  python p-decode.py -p 853822dcee4c6b59d4a9f0c4cdaf97989e29c83a [ crack pattern by hash ] ```
