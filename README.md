@@ -3,7 +3,7 @@ You need gesture.key you can find it in data/system/
 After that run script and follow options
 
 # Time !
-this script will take less than 8 seconds ! yup it's fast :wink: 
+this script will take less than 8 seconds ! yup it's fast :wink: see ![note](https://github.com/MGF15/P-Decode#time-test)
 
 # Test
 ```
@@ -32,6 +32,8 @@ python p-decode.py -f gesture.key
 
 # Time Test 
 
+```Note : now it's take less than 2 sec !! cool huh ?```
+
 |  Pattern length     |        Time ±           |
 | ----------------    | ---------------------   |
 |       4 <           |        0.02s            | 
@@ -45,6 +47,14 @@ python p-decode.py -f gesture.key
 
 > less than 2 sec on Intel® Core(TM) i5-6200U CPU @ 2.30GHz
 
+# Using
+``` python p-decode.py -f gesture.key [ crack pattern by file ] ```
+
+```  python p-decode.py -p 853822dcee4c6b59d4a9f0c4cdaf97989e29c83a [ crack pattern by hash ] ```
+
+```  python p-decode.py -g 876543210 [ generate gesture.key file ]```
+
+
 # Changelog
 
 v0.1
@@ -54,10 +64,15 @@ first version
 
 v0.2
 ```
-* speed up to just 6 sec ! 
-* simple change on the code 
+speed up to just 6 sec ! 
+simple change on the code 
 ```
 v0.3
 ```
 add svg file 
+```
+v0.4
+```
+speed up yes ! again
+add -g option ( gesture.key generate )
 ```
