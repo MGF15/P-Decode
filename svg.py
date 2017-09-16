@@ -4,6 +4,7 @@ import re
 
 def draw(patt):
 	patt =  ''.join([str(int(n)+1) for n in patt]) # 0 to 1 1 to 2 ...
+	svg = '<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" version="1.2" width="240" height="240" >'
 	line = '''
 	<line x1="$" y1="$" x2="$" y2="$" stroke="#F6F8FA" stroke-width="5" />
 	<line x1="$" y1="$" x2="$" y2="$" stroke="#F6F8FA" stroke-width="5" />
@@ -56,5 +57,5 @@ def draw(patt):
 	for t in range(1,len(patt)+1):
 		text = text.replace('-' + patt[t-1], str(t))
 	text = re.sub('-[0-9]','',text)
-	svg = '<?xml version="1.0" encoding="utf-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" version="1.2" width="240" height="240" >' + circle + line + text + '\n</svg>'
+	svg = svg + circle + line + text + '\n</svg>'
 	return svg
