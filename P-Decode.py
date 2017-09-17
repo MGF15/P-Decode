@@ -22,9 +22,9 @@ def crack(hash):
 
 	print logo
 	print '[*] Pattern Hash   : %s\n' % hash
-	# make it as fast as 
+	# make it as fast as possible
 	# pattern -> 1234 -> 01020304 -> \x01\x02\x03\x04 then sha1 hash
-
+	# get all permutations
 	for i in range(4, 10):
 
 		permutations = itertools.permutations("012345678", i)
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
 	elif sys.argv[1] == '-f':
 		file = open(sys.argv[2],'rb').read()
-		hash = hexlify(file) #file.encode('hex')
+		hash = hexlify(file) #file.encode('hex') hexlify fast than encode('hex')
 		crack(hash)
 
 	elif sys.argv[1] == '-p':
