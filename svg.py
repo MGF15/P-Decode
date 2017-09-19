@@ -38,7 +38,7 @@ def draw(patt):
 	<text x="118" y="212" fill="green" font-size="24">-8</text>
 	<text x="198" y="212" fill="green" font-size="24">-9</text>
 	'''
-	# make circle
+	# make circles
 	for i in patt:
 		circle = circle.replace('-' + i, 'stroke="green"')
 	circle = re.sub('-[0-9]', '', circle)
@@ -53,7 +53,7 @@ def draw(patt):
 			y = d / 3
 			line = line.replace('$', str(x*(2*15+2*25)+45), 1)
 			line = line.replace('$', str(y*(2*15+2*25)+45), 1)
-	# put number
+	# put numbers
 	for t in range(1,len(patt)+1):
 		text = text.replace('-' + patt[t-1], str(t))
 	text = re.sub('-[0-9]','',text)
