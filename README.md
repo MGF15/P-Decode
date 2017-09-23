@@ -6,6 +6,9 @@ After that run script and follow options
 this script will take less than 8 seconds ! yup it's fast :wink: see [note](https://github.com/MGF15/P-Decode#time-test)
 
 # Test
+
+python 2
+
 ```
 python p-decode.py -f gesture.key                             
 
