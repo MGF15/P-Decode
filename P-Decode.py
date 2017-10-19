@@ -1,5 +1,4 @@
-import itertools,sys,time,svg
-from hashlib import sha1
+import itertools,sys,time,svg,_sha
 from binascii import unhexlify , hexlify
 
 '''
@@ -34,7 +33,7 @@ def crack(hash):
 
 	for j in perm_list:
 
-		sha = sha1(unhexlify('0' + j)).hexdigest()
+		sha = _sha.new(unhexlify('0' + j)).hexdigest()
 
 		if hash == sha:
 			p = '0' + j
