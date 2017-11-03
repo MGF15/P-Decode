@@ -26,7 +26,7 @@ def crack(hash):
 	# get all permutations
 	for i in range(4, 10):
 
-		permutations = itertools.permutations("012345678", i)
+		permutations = itertools.permutations(x_list, i)
 
 	
 		perm_list = map(''.join, permutations)
@@ -74,6 +74,6 @@ if __name__ == "__main__":
 		output = open('gesture.key','wb')
 		output.write(_sha.new(gt).digest())
 		output.close()
-		print '[+] Pattern file : gestrue.key'
+		print '[+] Pattern file : gesture.key'
 	else:
 		exit()
