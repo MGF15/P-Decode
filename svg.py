@@ -17,15 +17,15 @@ def draw(patt):
 	<line x1="$" y1="$" x2="$" y2="$" stroke="#F6F8FA" stroke-width="5" />
 	'''
 	circle = '''
-	<circle cx="45" cy="45" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8"  -1/>
-	<circle cx="45" cy="125" r="2.5" fill="black" stroke-width="40" stroke-opacity="0.8" -4/>
-	<circle cx="45" cy="205" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" -7/>
-	<circle cx="125" cy="45" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" -2/>
-	<circle cx="125" cy="125" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8"  -5/>
-	<circle cx="125" cy="205" r="2.5" fill="black" stroke-width="40" stroke-opacity="0.8" -7/>
-	<circle cx="205" cy="45" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" -3/>
-	<circle cx="205" cy="125" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8" -6/>
-	<circle cx="205" cy="205" r="2.5" fill="black"  stroke-width="40" stroke-opacity="0.8"  -9/>
+        <circle cx="45" cy="45" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8"  -1/>
+	<circle cx="45" cy="125" r="2" fill="black" stroke-width="45" stroke-opacity="0.8" -4/>
+	<circle cx="45" cy="205" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8" -7/>
+	<circle cx="125" cy="45" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8" -2/>
+	<circle cx="125" cy="125" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8"  -5/>
+	<circle cx="125" cy="205" r="2" fill="black" stroke-width="45" stroke-opacity="0.8" -8/>
+	<circle cx="205" cy="45" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8" -3/>
+	<circle cx="205" cy="125" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8" -6/>
+	<circle cx="205" cy="205" r="2" fill="black"  stroke-width="45" stroke-opacity="0.8"  -9/>
 	'''
 	text = '''
 	<text x="38" y="52" fill="green" font-size="24">-1</text>
@@ -53,6 +53,7 @@ def draw(patt):
 			y = d / 3
 			line = line.replace('$', str(x*(2*15+2*25)+45), 1)
 			line = line.replace('$', str(y*(2*15+2*25)+45), 1)
+	line = line.replace('$', '')
 	# put numbers
 	for t in range(1,len(patt)+1):
 		text = text.replace('-' + patt[t-1], str(t))
