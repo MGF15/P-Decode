@@ -16,11 +16,11 @@ logo =  '''
 		[ {41}ndr0id Pa77ern Cr4ck t00l. ]
 	'''
 now = time.time()
-
+x_list = ["\x00","\x01","\x02","\x03","\x04","\x05","\x06","\x07","\x08"]
 def crack(hash):
 
 	print logo
-	print '[*] Pattern Hash   : %s\n' % hash
+	print '[*] Pattern Hash   : %s\n' % hash.upper()
 	# make it as fast as possible
 	# pattern -> 1234 -> 01020304 -> \x01\x02\x03\x04 then sha1 hash
 	# get all permutations
@@ -29,24 +29,24 @@ def crack(hash):
 		permutations = itertools.permutations("012345678", i)
 
 	
-	perm_list = map('0'.join, permutations)
+		perm_list = map(''.join, permutations)
 
-	for j in perm_list:
+		for j in perm_list:
 
-		sha = _sha.new(unhexlify('0' + j)).hexdigest()
+			sha = _sha.new(j).hexdigest()
 
-		if hash == sha:
-			p = '0' + j
-			pt = ''.join([p[o] for o in range(1,len(p), 2)])
-			print '[+] Pattern Length : %s\n' % len(pt)
-			print '[+] Pattern \t   : %s\n' % pt
-			patt = svg.draw(pt)
-			sv = open('%s.svg' % pt ,'wb')
-			sv.write(patt)
-			sv.close()
-			print '[+] Pattern SVG    : %s.svg\n' % pt
-			print '[*] Time : %s sec' % round(time.time() - now, 2)
-			exit()
+			if hash == sha:
+				p = hexlify(j)
+				pt = ''.join([p[o] for o in range(1,len(p), 2)])
+				print '[+] Pattern Length : %s\n' % len(pt)
+				print '[+] Pattern \t   : %s\n' % pt
+				patt = svg.draw(pt)
+				sv = open('%s.svg' % pt ,'wb')
+				sv.write(patt)
+				sv.close()
+				print '[+] Pattern SVG    : %s.svg\n' % pt
+				print '[*] Time : %s sec' % round(time.time() - now, 2)
+				exit()
 		
 
 	print "[-] Pattern not found !"
@@ -63,7 +63,8 @@ if __name__ == "__main__":
 		crack(hash)
 
 	elif sys.argv[1] == '-p':
-		hash = sys.argv[2]		
+		hash = sys.argv[2]
+		hash = hash.lower() if hash.isupper() else hash
 		crack(hash)
 
 	elif sys.argv[1] == '-g':
@@ -71,7 +72,7 @@ if __name__ == "__main__":
 		pat = sys.argv[2]
 		gt = unhexlify('0'+'0'.join(pat))
 		output = open('gesture.key','wb')
-		output.write(sha1(gt).digest())
+		output.write(_sha.new(gt).digest())
 		output.close()
 		print '[+] Pattern file : gestrue.key'
 	else:
