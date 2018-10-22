@@ -79,3 +79,7 @@ v0.4
 speed up yes ! again
 add -g option ( gesture.key generate )
 ```
+v0.5
+```
+fix some bugs & add info to use option -g
+```
