@@ -13,7 +13,7 @@ else:
     sha = _sha.new
 '''
 
-android pattern cracker v0.4
+android pattern cracker v0.5
 
 Coded by MGF15
 
@@ -22,7 +22,7 @@ file in android ->  /data/system/gesture.key
 '''
 logo = '''
         |~)  |~\ _ _ _  _| _
-        |~ ~~|_/}_(_(_)(_|}_ v0.4\n
+        |~ ~~|_/}_(_(_)(_|}_ v0.5\n
              [ {41}ndr0id Pa77ern Cr4ck t00l. ]
        '''
 now = time.time()
@@ -77,11 +77,21 @@ def crack(hash):
 if __name__ == "__main__":
 
     if len(sys.argv) < 3:
+        print(logo)
         print ('p-decode.py [-p hash ] or [-f gesture.key ] or [-g pattern ]')
 
     elif sys.argv[1] == '-f':
-        file = open(sys.argv[2], 'rb').read()
+        try:
+            file = open(sys.argv[2], 'rb').read()
+        except:
+            print(logo)
+            print ("[-] File not found or it's unreadable\n")
+            exit()
         hash = hexlify(file)    # file.encode('hex')
+        if len(file) == 0 or len(file) > 30:
+            print(logo)
+            print ('p-decode.py [-p hash ] or [-f gesture.key ] or [-g pattern ]')
+            exit() 
         crack(hash.decode('utf-8'))
 
     elif sys.argv[1] == '-p':
@@ -92,10 +102,21 @@ if __name__ == "__main__":
     elif sys.argv[1] == '-g':
         print (logo)
         pat = sys.argv[2]
-        gt = unhexlify('0' + '0'.join(pat))
-        output = open('gesture.key', 'wb')
-        output.write(sha1(gt).digest())
-        output.close()
-        print ('[+] Pattern file : gesture.key')
+        try:
+            gt = ''.join([chr(int(i)) for i in pat])
+            patt = svg.draw(pat)
+            sv = open('%s.svg' % pat, 'wb')
+            sv.write(patt.encode('utf-8'))
+            sv.close()
+            print ('[+] Pattern SVG\t\t: %s.svg\n' % pat)
+            output = open('gesture.key', 'wb')
+            output.write(sha(gt.encode('utf-8')).digest())
+            output.close()
+            print ('[+] Pattern file\t: gesture.key')
+        except:
+            print('[-] Pattern must be valid number from 0-8 see info.svg\n')
+            print(
+                 '[!] if you want to make pattern like letter M '
+                 'the pattern will be "6304258"')
     else:
         exit()
