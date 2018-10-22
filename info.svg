@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+    version="1.2" width="240" height="240" >
+        <circle cx="45" cy="45" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="45" cy="125" r="2.5" fill="black" stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="45" cy="205" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="125" cy="45" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="125" cy="125" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="125" cy="205" r="2.5" fill="black" stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="205" cy="45" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="205" cy="125" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        <circle cx="205" cy="205" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" stroke="green"/>
+        
+        <text x="38" y="52" fill="black" font-size="26" >0</text>
+        <text x="118" y="52" fill="black" font-size="26">1</text>
+        <text x="197" y="52" fill="black" font-size="26">2</text>
+        <text x="38" y="133" fill="black" font-size="26">3</text>
+        <text x="118" y="132" fill="black" font-size="26">4</text>
+        <text x="198" y="132" fill="black" font-size="26">5</text>
+        <text x="38" y="212" fill="black" font-size="26">6</text>
+        <text x="118" y="212" fill="black" font-size="26">7</text>
+        <text x="198" y="212" fill="black" font-size="26">8</text>
+        
+</svg>
