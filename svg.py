@@ -20,15 +20,15 @@ def draw(patt):
         <line x1="$" y1="$" x2="$" y2="$" stroke="#F6F8FA" stroke-width="5" />
         '''
     circle = '''
-        <circle cx="45" cy="45" r="2" fill="black"  stroke-width="45" -1/>
-        <circle cx="45" cy="125" r="2" fill="black" stroke-width="45" -4/>
-        <circle cx="45" cy="205" r="2" fill="black"  stroke-width="45" -7/>
-        <circle cx="125" cy="45" r="2" fill="black"  stroke-width="45" -2/>
-        <circle cx="125" cy="125" r="2" fill="black"  stroke-width="45" -5/>
-        <circle cx="125" cy="205" r="2" fill="black" stroke-width="45" -8/>
-        <circle cx="205" cy="45" r="2" fill="black"  stroke-width="45" -3/>
-        <circle cx="205" cy="125" r="2" fill="black"  stroke-width="45" -6/>
-        <circle cx="205" cy="205" r="2" fill="black"  stroke-width="45" -9/>
+        <circle cx="45" cy="45" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -1/>
+        <circle cx="45" cy="125" r="2.5" fill="black" stroke-opacity="0.8" stroke-width="40" -4/>
+        <circle cx="45" cy="205" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -7/>
+        <circle cx="125" cy="45" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -2/>
+        <circle cx="125" cy="125" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -5/>
+        <circle cx="125" cy="205" r="2.5" fill="black" stroke-opacity="0.8" stroke-width="40" -8/>
+        <circle cx="205" cy="45" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -3/>
+        <circle cx="205" cy="125" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -6/>
+        <circle cx="205" cy="205" r="2.5" fill="black"  stroke-opacity="0.8" stroke-width="40" -9/>
         '''
     text = '''
         <text x="38" y="52" fill="black" font-size="26" >-1</text>
