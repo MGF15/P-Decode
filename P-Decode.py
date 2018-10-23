@@ -90,7 +90,7 @@ if __name__ == "__main__":
         hash = hexlify(file)    # file.encode('hex')
         if len(file) == 0 or len(file) > 30:
             print(logo)
-            print ('p-decode.py [-p hash ] or [-f gesture.key ] or [-g pattern ]')
+            print ("[-] empty file or it's too large")
             exit() 
         crack(hash.decode('utf-8'))
 
